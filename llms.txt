@@ -1,0 +1,37 @@
+# Thingraph GCode Viewer
+
+> Thingraph GCode Viewer is a free browser-based application for previewing slicer GCode toolpaths (gcode, gco, nc). No desktop install required. Built on the @gcode-viewer/core WebGL SDK (Three.js), with client-side parsing and rendering.
+
+## Application
+
+- [Home](https://gcode.thingraph.site/home): Product overview and entry points
+- [GCode Viewer](https://gcode.thingraph.site/gcode-viewer): Upload and preview local GCode files in the browser
+- [Examples](https://gcode.thingraph.site/examples): Browse sample GCode and CAD models
+- [Support](https://gcode.thingraph.site/google/cad-viewer-support): Help and contact
+- [FAQ](https://gcode.thingraph.site/faq/): Static help articles
+
+## FAQ
+
+- [FAQ index](https://gcode.thingraph.site/faq/): Hub for GCode Viewer help articles
+- [How to preview GCode in the browser](https://gcode.thingraph.site/faq/how-to-preview-gcode-in-browser.html): Formats, upload, layers, legend, playback
+- [Is GCode Viewer safe?](https://gcode.thingraph.site/faq/is-gcode-viewer-safe-are-files-uploaded.html): Client-side preview; files not uploaded to Thingraph servers for viewing
+
+## Supported file formats
+
+- **gcode** — common slicer export
+- **gco** — alternate GCode extension
+- **nc** — numeric control / GCode-style files
+
+## Features
+
+- Layer scrubbing and step playback
+- Legend / color schemes (e.g. by line type)
+- GCode text panel synced to the current move
+- Local file upload and optional URL load
+- View cube, plate, and skybox for orientation
+
+## Contact
+
+- Email: thingraph@outlook.com
+- Privacy: https://cad.thingraph.site/google/cad-viewer-privacy
+- Terms: https://cad.thingraph.site/google/cad-viewer-terms

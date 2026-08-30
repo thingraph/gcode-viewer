@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/iconfont/iconfont2.css" />
+
+    <title>GCode Viewer</title>
+    <meta
+      name="description"
+      content="GCode Viewer is a free web app to preview slicer GCode toolpaths (gcode, gco, nc) in the browser. Powered by the @gcode-viewer/core WebGL SDK built on Three.js."
+    />
+    <meta
+      name="keywords"
+      content="GCode viewer, gcode preview, slicer preview, 3D printing, Bambu, Orca, @gcode-viewer/core, WebGL, Three.js"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GCode Viewer" />
+    <meta property="og:title" content="GCode Viewer – Preview slicer GCode in the browser" />
+    <meta
+      property="og:description"
+      content="Free web app to preview GCode toolpaths with layers, legend, and playback. Powered by @gcode-viewer/core."
+    />
+    <meta property="og:image" content="/og-image.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GCode Viewer" />
+    <meta
+      name="twitter:description"
+      content="Preview GCode toolpaths in the browser. Free, no install. Powered by @gcode-viewer/core."
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #app {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

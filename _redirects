@@ -1,0 +1,6 @@
+# FAQ static pages (must be before SPA fallback)
+/faq    /faq/index.html   200
+/faq/   /faq/index.html   200
+
+# SPA fallback for Vue routes
+/*    /index.html   200

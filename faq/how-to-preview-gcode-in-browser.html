@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Preview GCode in the Browser | GCode Viewer FAQ</title>
+    <meta
+      name="description"
+      content="Preview slicer GCode (gcode, gco, nc) in the browser with Thingraph GCode Viewer. Learn supported formats, local upload, examples, layers, legend, and playback."
+    />
+    <meta
+      name="keywords"
+      content="preview gcode online, gcode viewer browser, slicer toolpath preview, gcode gco nc, Thingraph"
+    />
+    <link rel="canonical" href="https://cad.thingraph.site/faq/how-to-preview-gcode-in-browser.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="GCode Viewer" />
+    <meta property="og:title" content="How to Preview GCode in the Browser" />
+    <meta
+      property="og:description"
+      content="Open slicer GCode locally in the browser — formats, layers, legend, and step playback."
+    />
+    <meta property="og:url" content="https://cad.thingraph.site/faq/how-to-preview-gcode-in-browser.html" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="/faq/faq.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What GCode formats does GCode Viewer support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Thingraph GCode Viewer supports common slicer exports with the extensions gcode, gco, and nc. Files from slicers such as Bambu Studio, OrcaSlicer, PrusaSlicer, and Cura generally work when they contain standard G0/G1 moves and typical comment metadata."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I open a GCode file in the browser?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to GCode Viewer on this site, then drop a file onto the upload area or click to select it from your device. You can also load a public URL that points to a .gcode / .gco / .nc file. Try the Examples page for sample files."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can I inspect after loading GCode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can scrub layers with the layer bar, step through moves with the steps bar, switch color schemes in the Legend (for example by line type), and read the GCode text panel synced to the current move."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="faq-header">
+      <div class="faq-header__inner">
+        <a class="faq-brand" href="/home">
+          <img src="/cube-64.svg" width="32" height="32" alt="" />
+          <span>GCode Viewer</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="faq-nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/gcode-viewer">GCode Viewer</a></li>
+            <li><a href="/examples">Examples</a></li>
+            <li><a href="/faq/" aria-current="page">FAQ</a></li>
+            <li><a href="/google/cad-viewer-support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="faq-wrap">
+      <article class="faq-card">
+        <nav class="faq-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><span aria-current="page">Preview GCode</span></li>
+          </ol>
+        </nav>
+
+        <p class="faq-eyebrow">Getting started</p>
+        <h1>How to Preview GCode in the Browser</h1>
+        <p class="faq-lead">
+          <strong>Thingraph GCode Viewer</strong> lets you inspect slicer toolpaths without installing desktop
+          software. Parsing and WebGL rendering run in your browser via
+          <a href="https://www.npmjs.com/package/@gcode-viewer/core" rel="noopener noreferrer">@gcode-viewer/core</a>.
+        </p>
+
+        <h2>Supported formats</h2>
+        <p>Open files with these extensions:</p>
+        <ul>
+          <li><strong>.gcode</strong> — most common slicer export</li>
+          <li><strong>.gco</strong> — alternate GCode extension used by some firmwares/workflows</li>
+          <li><strong>.nc</strong> — numeric control / GCode-style files</li>
+        </ul>
+        <p>
+          Dialect details vary by slicer (Bambu Studio, OrcaSlicer, PrusaSlicer, Cura, and others). Standard
+          travel/extrusion moves (<code>G0</code>/<code>G1</code>) and common comment tags for layers and line
+          types are supported for preview.
+        </p>
+
+        <h2>Open a local file</h2>
+        <ol>
+          <li>Open <a href="/gcode-viewer">GCode Viewer</a>.</li>
+          <li>Drop a file onto the upload area, or click to pick one from disk.</li>
+          <li>Wait for parsing to finish — the toolpath appears in the 3D view.</li>
+        </ol>
+        <p>
+          Prefer a quick try? Open <a href="/examples">Examples</a> and click a sample such as
+          <code>Sphere_40mm.gcode</code> or <code>PhoneHolder.gcode</code>.
+        </p>
+
+        <h2>Load from a URL</h2>
+        <p>
+          On the upload panel, choose <strong>from url</strong>, paste a direct link to a
+          <code>.gcode</code> / <code>.gco</code> / <code>.nc</code> file, and click Load. The host must allow
+          browser access (CORS). Local files never need a server.
+        </p>
+
+        <h2>Inspect layers, legend, and playback</h2>
+        <ul>
+          <li>
+            <strong>Layer bar</strong> — scrub Z layers to focus on a height range.
+          </li>
+          <li>
+            <strong>Steps bar</strong> — step through moves for playback-style inspection.
+          </li>
+          <li>
+            <strong>Legend</strong> — pick a color scheme (for example by line type) and toggle visibility of
+            categories such as outer wall, infill, or support when the file provides that metadata.
+          </li>
+          <li>
+            <strong>GCode text panel</strong> — read the source lines; the current move stays highlighted as you
+            scrub.
+          </li>
+        </ul>
+
+        <h2>Tips for large files</h2>
+        <ul>
+          <li>Very large prints take longer to parse and use more memory — start with a smaller slice if the tab feels slow.</li>
+          <li>If a file fails to load, confirm the extension is supported and that the content is text GCode (not a binary printer project).</li>
+          <li>Try an <a href="/examples">example file</a> to verify the viewer itself is working.</li>
+        </ul>
+
+        <section class="faq-related">
+          <h2>Related</h2>
+          <ul>
+            <li><a href="/faq/is-gcode-viewer-safe-are-files-uploaded.html">Is GCode Viewer safe?</a></li>
+            <li><a href="/gcode-viewer">Open GCode Viewer</a></li>
+            <li><a href="/faq/">All FAQ articles</a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <footer class="faq-footer">
+      <nav aria-label="Footer">
+        <a href="/google/cad-viewer-privacy">Privacy</a>
+        <a href="/google/cad-viewer-terms">Terms</a>
+        <a href="/google/cad-viewer-support">Support</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <p>
+        Thingraph · Powered by
+        <a href="https://www.npmjs.com/package/@gcode-viewer/core" rel="noopener noreferrer">@gcode-viewer/core</a>
+      </p>
+    </footer>
+  </body>
+</html>

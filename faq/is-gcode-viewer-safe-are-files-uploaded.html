@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is GCode Viewer Safe? Are Files Uploaded to Servers? | Thingraph FAQ</title>
+    <meta
+      name="description"
+      content="Thingraph GCode Viewer parses and renders GCode in your browser. Learn why files are not uploaded to our servers for viewing, and what data stays on your device."
+    />
+    <meta
+      name="keywords"
+      content="GCode Viewer safe, gcode privacy, are gcode files uploaded, client-side gcode preview, Thingraph"
+    />
+    <link rel="canonical" href="https://cad.thingraph.site/faq/is-gcode-viewer-safe-are-files-uploaded.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="GCode Viewer" />
+    <meta property="og:title" content="Is GCode Viewer Safe? Are Files Uploaded to Servers?" />
+    <meta
+      property="og:description"
+      content="Client-side WebGL preview — your GCode stays in the browser for viewing."
+    />
+    <meta property="og:url" content="https://cad.thingraph.site/faq/is-gcode-viewer-safe-are-files-uploaded.html" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="/faq/faq.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are my GCode files uploaded to Thingraph servers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. For local preview, Thingraph GCode Viewer reads the file in your browser and renders the toolpath with WebGL on your device. File content is not sent to Thingraph servers for storage or conversion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does loading from a URL send the file to Thingraph?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you paste a URL, your browser fetches the file directly from that host. Thingraph does not proxy or store the GCode for viewing. The remote server must allow the request (CORS)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can GCode Viewer edit or overwrite my files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The app is a viewer only. It does not write back to disk or modify the original slicer output."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="faq-header">
+      <div class="faq-header__inner">
+        <a class="faq-brand" href="/home">
+          <img src="/cube-64.svg" width="32" height="32" alt="" />
+          <span>GCode Viewer</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="faq-nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/gcode-viewer">GCode Viewer</a></li>
+            <li><a href="/examples">Examples</a></li>
+            <li><a href="/faq/" aria-current="page">FAQ</a></li>
+            <li><a href="/google/cad-viewer-support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="faq-wrap">
+      <article class="faq-card">
+        <nav class="faq-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><span aria-current="page">Privacy &amp; safety</span></li>
+          </ol>
+        </nav>
+
+        <p class="faq-eyebrow">Privacy · Security</p>
+        <h1>Is GCode Viewer Safe? Are My Files Uploaded to Your Servers?</h1>
+        <p class="faq-lead">
+          When you open a slicer <strong>GCode</strong> file with Thingraph <strong>GCode Viewer</strong>, where does
+          the data go? This page explains the client-side preview model.
+        </p>
+
+        <h2>Short answer</h2>
+        <p class="faq-note">
+          <strong>Your GCode content is not uploaded to Thingraph servers for viewing.</strong> Parsing and rendering
+          happen in your browser using WebGL (<code>@gcode-viewer/core</code> / Three.js). We do not run a cloud
+          conversion service that stores your toolpaths.
+        </p>
+
+        <h2>How local preview works</h2>
+        <ol>
+          <li>You choose a file on your device (or paste a URL).</li>
+          <li>The file bytes are loaded into <strong>your browser</strong>.</li>
+          <li>The viewer parses GCode and draws the toolpath with <strong>WebGL on your GPU</strong>.</li>
+          <li>No step sends the full file to a Thingraph backend for processing or storage.</li>
+        </ol>
+
+        <h2>Loading from a URL</h2>
+        <p>
+          If you use <strong>from url</strong>, the browser requests the file from that host directly. Thingraph does
+          not download it on your behalf or keep a copy. The remote server must allow cross-origin access (CORS) for
+          the load to succeed.
+        </p>
+
+        <h2>Viewer only</h2>
+        <p>
+          GCode Viewer does not edit, overwrite, or upload your slicer output. For changes, use your slicer or a
+          dedicated GCode editor, then re-open the file here to preview.
+        </p>
+
+        <h2>Analytics</h2>
+        <p>
+          Like many websites, we may use privacy-conscious analytics (for example page views) that do not include
+          your GCode file contents. See our
+          <a href="/google/cad-viewer-privacy">Privacy Policy</a> for product-specific details.
+        </p>
+
+        <section class="faq-related">
+          <h2>Related</h2>
+          <ul>
+            <li><a href="/faq/how-to-preview-gcode-in-browser.html">How to preview GCode in the browser</a></li>
+            <li><a href="/google/cad-viewer-privacy">Privacy Policy</a></li>
+            <li><a href="/faq/">All FAQ articles</a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <footer class="faq-footer">
+      <nav aria-label="Footer">
+        <a href="/google/cad-viewer-privacy">Privacy</a>
+        <a href="/google/cad-viewer-terms">Terms</a>
+        <a href="/google/cad-viewer-support">Support</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <p>
+        Thingraph · Powered by
+        <a href="https://www.npmjs.com/package/@gcode-viewer/core" rel="noopener noreferrer">@gcode-viewer/core</a>
+      </p>
+    </footer>
+  </body>
+</html>
