@@ -59,7 +59,7 @@ Works on modern desktop browsers (Chrome, Firefox, Edge, Safari, and similar).
 
 - **3D toolpath visualization** — orbit, pan, and zoom the print path on a build plate (WebGL via `@gcode-viewer/core`)
 - **Layer scrubbing** — focus on a height range with the layer bar (inspect one layer band or a stack); inactive layers can show as a light ghost shell
-- **Step playback** — step through moves to follow the print sequence
+- **Step playback** — scrub moves on the active layer, or play the print sequence with speed controls
 - **Legend / color schemes** — color by line type (perimeter, infill, travel, …), speed, and related modes; toggle categories when slicer metadata is present
 - **GCode text panel** — source lines synced to the current move for analysis
 - **Client-side only** — parse and render on your device; optional public URL load (CORS permitting)
@@ -72,6 +72,10 @@ Works on modern desktop browsers (Chrome, Firefox, Edge, Safari, and similar).
 **Step scrubbing** — use the bottom bar to walk individual moves on the active layer; the nozzle marker and GCode panel stay in sync:
 
 ![Step scrubbing on the active layer](images/gcode_viewer_step.png)
+
+**Play animation** — play / pause the print sequence from the steps bar, with speed multipliers and skip-to-start / skip-to-end:
+
+![Play animation of the print sequence](images/play_animation.gif)
 
 ### CAD / 3D models
 
