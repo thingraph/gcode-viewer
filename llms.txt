@@ -33,5 +33,5 @@
 ## Contact
 
 - Email: thingraph@outlook.com
-- Privacy: https://cad.thingraph.site/google/cad-viewer-privacy
-- Terms: https://cad.thingraph.site/google/cad-viewer-terms
+- Privacy: https://gcode.thingraph.site/google/cad-viewer-privacy
+- Terms: https://gcode.thingraph.site/google/cad-viewer-terms

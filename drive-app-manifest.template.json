@@ -61,7 +61,7 @@
   "api_console_project_id": "YOUR_PROJECT_ID",
   "app": {
     "launch": {
-      "web_url": "https://cad.thingraph.site"
+      "web_url": "https://gcode.thingraph.site"
     }
   }
 }
