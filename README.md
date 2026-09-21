@@ -2,7 +2,7 @@
 
 **GCode Viewer** is a browser-based **3D GCode visualizer** for inspecting slicer toolpaths before you print.
 
-Open **gcode** / **gco** / **nc** from Bambu Studio, OrcaSlicer, PrusaSlicer, Cura, and similar workflows — no desktop install required. Files are parsed and rendered **locally in your browser** (WebGL); nothing is uploaded to Thingraph for viewing.
+Open **.gcode** from Bambu Studio, OrcaSlicer, PrusaSlicer, Cura, and similar workflows — no desktop install required. Files are parsed and rendered **locally in your browser** (WebGL); nothing is uploaded to Thingraph for viewing.
 
 The same site also includes a **CAD Viewer** page powered by `Viewer3d` for common 3D mesh formats (useful for checking STL/OBJ and other models alongside GCode).
 
@@ -34,8 +34,6 @@ Works on modern desktop browsers (Chrome, Firefox, Edge, Safari, and similar).
 | Format | Description |
 |--------|-------------|
 | **gcode** | Common slicer export (Bambu Studio, OrcaSlicer, PrusaSlicer, Cura, and others) |
-| **gco** | Alternate GCode extension used by some firmwares / workflows |
-| **nc** | Numeric control / GCode-style files |
 
 ### CAD Viewer (`Viewer3d`)
 

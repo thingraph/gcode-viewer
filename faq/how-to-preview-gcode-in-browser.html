@@ -6,11 +6,11 @@
     <title>How to Preview GCode in the Browser | GCode Viewer FAQ</title>
     <meta
       name="description"
-      content="Preview slicer GCode (gcode, gco, nc) in the browser with Thingraph GCode Viewer. Learn supported formats, local upload, examples, layers, legend, and playback."
+      content="Preview slicer GCode (.gcode) in the browser with Thingraph GCode Viewer. Learn supported formats, local upload, examples, layers, legend, and playback."
     />
     <meta
       name="keywords"
-      content="preview gcode online, gcode viewer browser, slicer toolpath preview, gcode gco nc, Thingraph"
+      content="preview gcode online, gcode viewer browser, slicer toolpath preview, .gcode, Thingraph"
     />
     <link rel="canonical" href="https://gcode.thingraph.site/faq/how-to-preview-gcode-in-browser.html" />
     <meta property="og:type" content="article" />
@@ -33,7 +33,7 @@
             "name": "What GCode formats does GCode Viewer support?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Thingraph GCode Viewer supports common slicer exports with the extensions gcode, gco, and nc. Files from slicers such as Bambu Studio, OrcaSlicer, PrusaSlicer, and Cura generally work when they contain standard G0/G1 moves and typical comment metadata."
+              "text": "Thingraph GCode Viewer supports common slicer exports with the .gcode extension. Files from slicers such as Bambu Studio, OrcaSlicer, PrusaSlicer, and Cura generally work when they contain standard G0/G1 moves and typical comment metadata."
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "How do I open a GCode file in the browser?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Go to GCode Viewer on this site, then drop a file onto the upload area or click to select it from your device. You can also load a public URL that points to a .gcode / .gco / .nc file. Try the Examples page for sample files."
+              "text": "Go to GCode Viewer on this site, then drop a file onto the upload area or click to select it from your device. You can also load a public URL that points to a .gcode file. Try the Examples page for sample files."
             }
           },
           {
@@ -94,12 +94,7 @@
         </p>
 
         <h2>Supported formats</h2>
-        <p>Open files with these extensions:</p>
-        <ul>
-          <li><strong>.gcode</strong> — most common slicer export</li>
-          <li><strong>.gco</strong> — alternate GCode extension used by some firmwares/workflows</li>
-          <li><strong>.nc</strong> — numeric control / GCode-style files</li>
-        </ul>
+        <p>Open files with the <strong>.gcode</strong> extension (common slicer export).</p>
         <p>
           Dialect details vary by slicer (Bambu Studio, OrcaSlicer, PrusaSlicer, Cura, and others). Standard
           travel/extrusion moves (<code>G0</code>/<code>G1</code>) and common comment tags for layers and line
@@ -120,7 +115,7 @@
         <h2>Load from a URL</h2>
         <p>
           On the upload panel, choose <strong>from url</strong>, paste a direct link to a
-          <code>.gcode</code> / <code>.gco</code> / <code>.nc</code> file, and click Load. The host must allow
+          <code>.gcode</code> file, and click Load. The host must allow
           browser access (CORS). Local files never need a server.
         </p>
 

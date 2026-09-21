@@ -1,6 +1,6 @@
 # Thingraph GCode Viewer
 
-> Thingraph GCode Viewer is a free browser-based application for previewing slicer GCode toolpaths (gcode, gco, nc). No desktop install required. Built on the @gcode-viewer/core WebGL SDK (Three.js), with client-side parsing and rendering.
+> Thingraph GCode Viewer is a free browser-based application for previewing slicer GCode toolpaths (.gcode). No desktop install required. Built on the @gcode-viewer/core WebGL SDK (Three.js), with client-side parsing and rendering.
 
 ## Application
 
@@ -19,8 +19,6 @@
 ## Supported file formats
 
 - **gcode** — common slicer export
-- **gco** — alternate GCode extension
-- **nc** — numeric control / GCode-style files
 
 ## Features
 
